@@ -1,4 +1,3 @@
-const cors = require('cors');
 const path= require('path');
 const express = require('express'); //ya incluye el bodyParser
 const app = express();
@@ -16,7 +15,6 @@ app.set('port', port);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // MIDDLEWARES
-app.use(cors()); // mediador con angular
 app.use(express.json()); // ´para poder recibir json
 app.use(express.urlencoded({extended: false})) // para poder recibir datos desde la url (post etc)
 
